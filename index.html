@@ -269,6 +269,19 @@
             </div>
           </div>
         </div>
+          <div>
+            <h3 class="resume-title">Certification</h3>
+
+          <div class="row">
+            <ul>
+              <li> Oracle Certified Specialist, Mobile Cloud Service 2016 Developer</li>
+              <li> Oracle MOOC: Chatbots with Oracle Intelligent Bots</li>
+              <li>Soar higher with Oracle JavaScript Extension Toolkit (JET) 4.0 (2018)</li>
+              <li>NodeJS Using Oracle Cloud </li>
+            </ul>
+          </div>
+        </div>
+
 
       </div>
     </section>
@@ -481,7 +494,7 @@
                   Developed a chatbot which communicate with the customer via a user interface, takes orders for food,
                   accept location of the customer
                   provides tracking number which can be further used to track the order placed. This chatbot was
-                  published through multiple channels like WhatsApp, Facebook Messenger, Mobile and Web App.
+                  published through multiple channels like WhatsApp, Facebook Messenger, Mobile and Web App by using custom webhooks and apis developed in Node.js.
                 </p>
               </div>
               <div class="card-footer">
@@ -822,29 +835,39 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script type="text/javascript">
-    var text = 'API, API, API, REST REST REST, NLP, NLP, NLP, NLP, Docker, Docker, Docker, AWS, AWS, AWS, Azure, Azure, Oracle Cloud, Oracle Cloud, Oracle Cloud, Node.js, Node.js, Node.js, Node.js, Node.js, JavaScript, JavaScript, JavaScript, JavaScript,JavaScript, Python, Python, Python, Python, Python, Jenkins, Jenkins, Jenkins, React.js, React.js, React.js, HTML5, HTML5, HTML5, CSS3, CSS3, CSS3, REST API, CHATBOTS, CHATBOTS,CHATBOTS,CHATBOTS, MOBILE APPS, MOBILE APPS, MOBILE APPS ';
-    var lines = text.split(/[,\ ]+/g),
-      data = Highcharts.reduce(lines, function (arr, word) {
-        var obj = Highcharts.find(arr, function (obj) {
-          return obj.name === word;
-        });
-        if (obj) {
-          obj.weight += 1;
-        } else {
-          obj = {
-            name: word,
-            weight: 1
-          };
-          arr.push(obj);
-        }
-        return arr;
-      }, []);
+    var lines = ['API', 'API', 'API', 'REST', 'REST', 'REST', 'NLP', 'NLP', 'NLP', 'NLP', 'Docker', 'Docker', 'Docker', 'AWS', 'AWS', 'AWS'
+      , 'Azure', 'Azure', 'Oracle Cloud', 'Oracle Cloud', 'Oracle Cloud', 'Node.js', 'Node.js', 'Node.js', 'Node.js', 'Node.js', 'JavaScript', 'JavaScript', 'JavaScript', 'JavaScript', 'JavaScript', 'Python', 'Python', 'Python', 'Python'
+      , 'Python', 'Jenkins', 'Jenkins', 'Jenkins', 'React.js', 'React.js', 'React.js', 'HTML5', 'HTML5', 'HTML5', 'CSS3', 'CSS3', 'CSS3', 'Chatbots', 'Chatbots', 'Chatbots', 'Chatbots', 'Mobile Apps', 'Mobile Apps', 'Mobile Apps'
+      , 'MongoDB', 'MongoDB', 'MongoDB', 'MongoDB',
+      'DevOps', 'DevOps', 'DevOps', 'DevOps',
+      'Cordova', 'Cordova', 'Android', 'IOS', 'Android', 'IOS',
+      'Kore.ai', 'Kore.ai', 'Kore.ai',
+      'Oracle JET', 'Oracle JET', 'Oracle JET',
+      'Ruby on Rails', 'Ruby on Rails', 'Ruby on Rails', 'Ruby', 'Ruby', 'Ruby']
+    data = Highcharts.reduce(lines, function (arr, word) {
+      var obj = Highcharts.find(arr, function (obj) {
+        return obj.name === word;
+      });
+      if (obj) {
+        obj.weight += 1;
+      } else {
+        obj = {
+          name: word,
+          weight: 1
+        };
+        arr.push(obj);
+      }
+      return arr;
+    }, []);
+
 
     Highcharts.chart('word-cloud-container', {
+
       chart: {
         backgroundColor: 'transparent',
-        // height: 400,
-        // width: 1000
+        style: { "fontFamily": "\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif", "fontSize": "50px" },
+        plotBorderColor: '#606063',
+        minFontSize: 20,
       },
       accessibility: {
         screenReaderSection: {
@@ -870,6 +893,8 @@
         enabled: false
       },
     });
+
+
   </script>
 </body>
 

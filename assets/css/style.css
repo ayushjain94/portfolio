@@ -1015,6 +1015,10 @@ a:hover {
     margin-bottom: 3rem;
   }
 }
+.card{
+  min-height: 550px;
+  max-height: 700px;
+}
 
 .card-blog .card-body {
   position: relative;
@@ -1065,6 +1069,16 @@ a:hover {
   color: #4e4e4e;
   display: inline-block;
   float: right;
+}
+
+.card-description{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;  
+}
+.img-fluid{
+  height: 210px;
 }
 
 /*--------------------------------------------------------------

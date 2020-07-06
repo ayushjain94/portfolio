@@ -1349,6 +1349,7 @@ footer .credits a {
 .highcharts-figure, .highcharts-data-table table {
   min-width: 320px; 
   max-width: 1200px;
+  width: 100%;
   margin: 1em auto;
 }
 
@@ -1371,5 +1372,5 @@ footer .credits a {
 }
 
 .word-cloud-container{
-  width: 1200px;
+  width: 100%;
 }

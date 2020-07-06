@@ -1079,6 +1079,14 @@ a:hover {
 }
 .img-fluid{
   height: 210px;
+  object-fit: cover;
+}
+.img-fluid-expertiza{
+  height: 210px;
+  width: 100%;
+  object-fit: none;
+  object-position: center;
+  background-color: red;
 }
 
 /*--------------------------------------------------------------
@@ -1262,6 +1270,12 @@ footer .credits a {
 --------------------------------------------------------------*/
 .resume{
   margin-bottom: 3rem;
+}
+.resume-title-main{
+  display: inline-block;
+}
+.download-resume-button{
+  float: right;
 }
 .resume .resume-title {
   font-size: 26px;

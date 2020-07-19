@@ -215,9 +215,9 @@ a:hover {
 }
 
 .socials .ico-circle {
-  height: 40px;
-  width: 40px;
-  font-size: 1.7rem;
+  height: 30px;
+  width: 30px;
+  font-size: 1.3rem;
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
@@ -658,7 +658,7 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: .2;
 }
 
 .intro .intro-title {
@@ -836,7 +836,8 @@ a:hover {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .owl-carousel .owl-item img {
-  width: auto;
+  width: 150px;
+  height: 150px;
 }
 .user-img{
   font-size: 100px;

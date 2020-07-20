@@ -784,6 +784,7 @@ a:hover {
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
+  min-height: 380px;
 }
 
 .service-box:hover .ico-circle {
@@ -1025,7 +1026,7 @@ a:hover {
   }
 }
 .card{
-  min-height: 550px;
+  min-height: 565px;
   max-height: 700px;
 }
 
